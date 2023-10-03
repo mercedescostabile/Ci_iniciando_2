@@ -2,9 +2,8 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/UnitTests/JUnit5TestClass.java to edit this template
  */
-package calcu_ej_ci;
+package com.mycompany.mavenproject1;
 
-import com.mycompany.mavenproject1.Calculadora;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.AfterAll;
 import org.junit.jupiter.api.BeforeEach;
@@ -20,27 +19,29 @@ public class CalculadoraTest {
     
     public CalculadoraTest() {
     }
-    
-    @BeforeAll
-    public static void setUpClass() {
+
+    @org.junit.jupiter.api.BeforeAll
+    public static void setUpClass() throws Exception {
+    }
+
+    @org.junit.jupiter.api.AfterAll
+    public static void tearDownClass() throws Exception {
+    }
+
+    @org.junit.jupiter.api.BeforeEach
+    public void setUp() throws Exception {
+    }
+
+    @org.junit.jupiter.api.AfterEach
+    public void tearDown() throws Exception {
     }
     
-    @AfterAll
-    public static void tearDownClass() {
-    }
-    
-    @BeforeEach
-    public void setUp() {
-    }
-    
-    @AfterEach
-    public void tearDown() {
-    }
+
 
     /**
      * Test of sum method, of class Calculadora.
      */
-    @Test
+    @org.junit.jupiter.api.Test
     public void testSum() {
         System.out.println("sum");
         int num1 = 5;
@@ -50,13 +51,13 @@ public class CalculadoraTest {
         int result = instance.sum(num1, num2);
         assertEquals(expResult, result);
         // TODO review the generated test code and remove the default call to fail.
-        
+      
     }
 
     /**
      * Test of subtract method, of class Calculadora.
      */
-    @Test
+    @org.junit.jupiter.api.Test
     public void testSubtract() {
         System.out.println("subtract");
         int x = 10;
@@ -72,7 +73,7 @@ public class CalculadoraTest {
     /**
      * Test of multiply method, of class Calculadora.
      */
-    @Test
+    @org.junit.jupiter.api.Test
     public void testMultiply() {
         System.out.println("multiply");
         int x = 3;
@@ -82,13 +83,13 @@ public class CalculadoraTest {
         int result = instance.multiply(x, y);
         assertEquals(expResult, result);
         // TODO review the generated test code and remove the default call to fail.
-        
+       
     }
 
     /**
      * Test of div method, of class Calculadora.
      */
-    @Test
+    @org.junit.jupiter.api.Test
     public void testDiv() {
         System.out.println("div");
         int num1 = 10;
@@ -98,7 +99,7 @@ public class CalculadoraTest {
         int result = instance.div(num1, num2);
         assertEquals(expResult, result);
         // TODO review the generated test code and remove the default call to fail.
-        
+     
     }
     
 }

@@ -1,4 +1,4 @@
-package calcu_ej_ci;
+package com.mycompany.mavenproject1;
 
 /*
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
